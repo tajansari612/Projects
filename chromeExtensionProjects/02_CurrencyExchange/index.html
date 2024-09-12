@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Currency Exchange</h1>
+  <form>
+
+    <div class="currency">
+      <input list="currencies-1" name="currency-1" id="currency-1">
+      <datalist id="currencies-1">
+        <option value="INR">India</option>
+        <option value="USD">US</option>
+        <option value="MYR">Malaysia</option>
+        <option value="AUD">UAE</option>
+        <option value="SGD">Singapore</option>
+        <option value="EUR">EU</option>
+        <option value="JPY">Japan</option>
+        <option value="CHN">China</option>
+        <option value="HKD">Hong Kong</option>
+        <option value="RUB">Russia</option>
+      </datalist>
+      <span class="output">
+        <input type="text" name="" id="amount">
+      </span>
+    </div>
+
+
+    <div class="currency">
+      <input list="currencies-2" name="currency-2" id="currency-2">
+      <datalist id="currencies-2">
+        <option value="INR">India</option>
+        <option value="USD">US</option>
+        <option value="MYR">Malaysia</option>
+        <option value="AUD">UAE</option>
+        <option value="SGD">Singapore</option>
+        <option value="EUR">EU</option>
+        <option value="JPY">Japan</option>
+        <option value="CHN">China</option>
+        <option value="HKD">Hong Kong</option>
+        <option value="RUB">Russia</option>
+      </datalist>
+      <span class="output">
+        <p id="output"></p>
+      </span>
+    </div>
+
+    <button type="submit" id="convert-btn">Convert</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

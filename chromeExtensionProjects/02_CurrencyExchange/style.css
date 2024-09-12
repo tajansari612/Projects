@@ -1,0 +1,40 @@
+body{
+    background: #000;
+    color: white;
+    border-radius: 40px;
+    padding: 10px;
+    min-width: 100px;
+    width: 300px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 8px;
+}
+
+input{
+    margin-bottom: 16px;
+    width: 60px;
+}
+
+button{
+    margin: 16px 0;
+    padding: 6px 0;
+    font-weight: 600;
+    width: 90px;
+    color: red;
+}
+
+.output{
+    color:orangered;
+    font:500;
+}
+
+.currency{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
