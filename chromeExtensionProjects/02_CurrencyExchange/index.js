@@ -4,9 +4,11 @@ const convertBtn = document.getElementById('convert-btn')
 convertBtn.addEventListener("click",(e) =>{
   e.preventDefault()
 
-  const input_1 = document.getElementById('currency-1').value
-  const input_2 = document.getElementById('currency-2').value
+  const input_1 = document.getElementById('input-1').value
+  const input_2 = document.getElementById('input-2').value
   const amount = document.getElementById('amount').value
+  console.log(input_1,input_2,amount);
+  
 
   const url = `https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=${input_1}&to=${input_2}&amount=${amount}`
   const options = {

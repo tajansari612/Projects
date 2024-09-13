@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currency Exchange</title>
+  <title>Currency Converter</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Currency Exchange</h1>
+  <h1>Currency Converter</h1>
+  <p>Check live rates of currencies from all over the Globe </p>
   <form>
 
-    <div class="currency">
-      <input list="currencies-1" name="currency-1" id="currency-1">
+    <div class="currency" id="currency-1">
+      <input list="currencies-1" name="currency-1" placeholder="Select value" id="input-1">
       <datalist id="currencies-1">
         <option value="INR">India</option>
         <option value="USD">US</option>
@@ -25,15 +26,18 @@
         <option value="CHN">China</option>
         <option value="HKD">Hong Kong</option>
         <option value="RUB">Russia</option>
+
+        <option value="ANG">Netherland</option>
+        <option value="SVC">Salvadoran Colon</option>
       </datalist>
-      <span class="output">
-        <input type="text" name="" id="amount">
-      </span>
+      <input type="text" name="" id="amount" value="1">
     </div>
 
-
-    <div class="currency">
-      <input list="currencies-2" name="currency-2" id="currency-2">
+    <div class="currency-converter-logo">
+      <img src="Group 8.png" alt="" srcset="" width="36px">
+    </div>
+    <div class="currency" id="currency-2">
+      <input list="currencies-2" name="currency-2" placeholder="Select value" id="input-2">
       <datalist id="currencies-2">
         <option value="INR">India</option>
         <option value="USD">US</option>
@@ -45,10 +49,11 @@
         <option value="CHN">China</option>
         <option value="HKD">Hong Kong</option>
         <option value="RUB">Russia</option>
+
+        <option value="ANG">Netherland</option>
+        <option value="SVC">Salvadoran Colon</option>
       </datalist>
-      <span class="output">
-        <p id="output"></p>
-      </span>
+      <p id="output">Rate</p>
     </div>
 
     <button type="submit" id="convert-btn">Convert</button>
